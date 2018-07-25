@@ -1,0 +1,87 @@
+---
+title: "Starter Pack"
+description: ""
+---
+
+{namespace pageDocsIndex}
+
+/**
+ */
+{template .render}
+	{@param site: ?}
+
+	<div class="main">
+		<main class="content">
+			<div class="docs">
+				{call Topbar.render}
+					{param items: $site.topbar /}
+					{param style: 'topbar-light' /}
+					{param logo: [
+						'text': $site.title,
+						'icon': 'icon-16-bullhorn'
+					] /}
+				{/call}
+				{call .topics data="all" /}
+			</div>
+		</main>
+	</div>
+{/template}
+
+/**
+ */
+{template .topics}
+
+
+	<div>
+		<div class="docs-home-topics">
+			<div class="container-hybrid">
+				<div class="row">
+					<div class="col-xs-14 col-xs-offset-1 ">
+						<section class="docs-home-middle">
+							<h2 class="docs-home-middle-subtitle">Informações Essenciais</h2>
+							<p class="docs-home-middle-description">Alguns links importantes para o início de sua jornada</p>
+						</section>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 col-md-offset-2 col-xs-16">
+						<div class="row">
+							<div class="col-md-8 col-md-offset-0 col-xs-14 col-xs-offset-1">
+								<a class="topic radial-out" href="https://drive.google.com/drive/folders/1TQs6k3jYBCD3pJCkspW6f33Iupl9gt5N?usp=sharing" target="_blank">
+									<div class="topic-icon">
+										<span class="icon-16-cloud"></span>
+									</div>
+									<h3 class="topic-title">New Hires Drive</h3>
+								</a>
+							</div>
+							<div class="col-md-8 col-md-offset-0 col-xs-14 col-xs-offset-1">
+								<a class="topic radial-out" href="https://loop.liferay.com/web/guest/home/-/loop/departments/_Human+Resources+-+LATAM/pages" target="_blank">
+									<div class="topic-icon">
+										<span class="icon-16-bullhorn"></span>
+									</div>
+									<h3 class="topic-title">HR Loop Pages</h3>
+								</a>
+							</div>
+							<div class="col-md-8 col-md-offset-0 col-xs-14 col-xs-offset-1">
+								<a class="topic radial-out" href="https://in.liferay.com/" target="_blank">
+									<div class="topic-icon">
+										<span class="icon-16-streams"></span>
+									</div>
+									<h3 class="topic-title">Liferay Social Office</h3>
+								</a>
+							</div>
+							<div class="col-md-8 col-md-offset-0 col-xs-14 col-xs-offset-1">
+								<a class="topic radial-out" href="http://clockin.liferay.com/" target="_blank">
+									<div class="topic-icon">
+										<span class="icon-16-clock"></span>
+									</div>
+									<h3 class="topic-title">Controle de Ponto</h3>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{/template}

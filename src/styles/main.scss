@@ -1,0 +1,73 @@
+$accent: #0B63CE;
+
+@import "marble";
+
+// Root
+@import "templates/root";
+
+// Landing
+@import "templates/landing";
+
+// Docs
+@import "templates/docs";
+
+// Search
+@import "templates/search";
+
+// Updates
+@import "templates/updates";
+
+// Blog
+@import "templates/blog";
+
+// Tutorial
+@import "templates/tutorial";
+
+img {
+    margin: 0 auto;
+    display: block;
+}
+
+p { 
+    font-size: 18px;
+}
+
+.video-responsive {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.topbar {
+    box-shadow: 0 2px 8px rgba(14, 20, 26, 0.12);
+}
+
+.topbar--fixed {
+ 
+    width: 100%;
+    position: fixed;
+}
+
+.docs-home-topics {
+    width: 100%;
+    height: 100%;
+    padding: 18px;
+    position: absolute;
+    overflow: hidden;
+}
+
+.btn-home {
+    width: 200px;
+}
+
+.header--color-lightblue{
+    background-color: #f0f8ff;
+}

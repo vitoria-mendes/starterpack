@@ -1,0 +1,24 @@
+{namespace main}
+
+/**
+ */
+{template .render}
+	{@param content: ?}
+	{@param site: ?}
+	{@param? elementClasses: ?}
+
+	<div class="{$elementClasses ?: 'main'}">
+		<main class="content">
+			{call Topbar.render}
+				{param items: $site.topbar /}
+				{param style: 'topbar-light topbar--fixed' /}
+				{param logo: [
+					'text': $site.title,
+					'icon': 'icon-16-bullhorn'
+				] /}
+			{/call}
+
+			{$content}
+		</main>
+	</div>
+{/template}

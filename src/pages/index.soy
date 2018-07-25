@@ -1,0 +1,38 @@
+---
+title: "Home"
+description: "Welcome! We're Glad You're here."
+---
+
+{namespace pageIndex}
+
+/**
+ */
+{template .render}
+	{@param site: ?}
+
+	{call main.render data="all"}
+		{param content kind="html"}
+			{call .header data="all" /}
+			{call Footer.render data="all" /}
+		{/param}
+	{/call}
+{/template}
+
+/**
+ */
+{template .header}
+	{@param site: ?}
+
+	<header class="header header--color-lightblue">
+		<div class="container">
+			<img src="/images/liferay-logo.png"  style="height: 110px; width= 10px;">
+			<h2 class="header-subtitle">{$site.index.description}</h2>
+			<div class="header-cta">
+				<a href="/integracao/example/first-day.html" class="btn btn-accent btn-home">Integração</a>
+				<a href="/docs" class="btn btn-accent btn-home">Starter Pack</a>
+			</div>
+		</div>
+	</header>
+{/template}
+
+

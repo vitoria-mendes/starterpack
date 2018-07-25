@@ -1,0 +1,21 @@
+---
+title: "Integração"
+description: "Foo bar."
+url: "/integracao/example/first-day.html/"
+layout: false
+---
+
+{namespace integracaoIndex}
+
+/**
+ */
+{template .render}
+	{@param page: ?}
+
+	<html lang="en">
+		<head>
+			<meta charset="UTF-8">
+			<meta http-equiv="refresh" content="0; URL='{$page.url}'">
+		</head>
+	</html>
+{/template}
