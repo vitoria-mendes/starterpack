@@ -1,3 +1,6 @@
 {
-	"id": "starterpack"
+	"id": "starterpack",
+	"env": {
+	  "WEDEPLOY_WEB_PATH": "src"
+	}
 }
