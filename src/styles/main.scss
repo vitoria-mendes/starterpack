@@ -50,19 +50,9 @@ p {
     box-shadow: 0 2px 8px rgba(14, 20, 26, 0.12);
 }
 
-.topbar--fixed {
- 
-    width: 100%;
-    position: fixed;
-}
-
 .docs-home-topics {
-    width: 100%;
-    height: 100%;
-    padding: 18px;
-    position: absolute;
-    overflow: hidden;
-}
+   position: sticky;
+}    
 
 .btn-home {
     width: 200px;
@@ -70,4 +60,15 @@ p {
 
 .header--color-lightblue{
     background-color: #f0f8ff;
+    height: 90vh;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.boxes{
+    margin-top: -30px;
 }

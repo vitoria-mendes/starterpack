@@ -1,7 +1,3 @@
 {
-  "id": "starterpack",
-  "image": "wedeploy/hosting:2.0.0",
-  "env": {
-    "WEDEPLOY_WEB_PATH": "./dist"
-  }
+  "id": "starterpack"
 }
